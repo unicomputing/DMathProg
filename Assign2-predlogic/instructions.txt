@@ -1,0 +1,60 @@
+Extra credit problems:
+
+There are two prerequisites to do the extra-credit programming problems.
+
+1. Do the exercises named "hw2 sec 3.3 #10" given in class today.
+
+2. Install any Python 3.7 (or 3.6) version to be able to run python as a
+   command in a terminal.
+
+   I will hold extra help in New CS 106 during my Monday morning and
+   Thursday afternoon office hours to help those who need.
+
+
+For extra credit problems:
+
+a) Get the two files cafe.da and tarski.da.
+
+   They contain two programs that you can start with for the two
+   programming problems below.
+
+b) Run the following two commands:
+
+      python -m pip install --pre pyDistAlgo
+      
+      python -m da ...cafe.ca
+
+   The first installs DistAlgo, an extension of Python for programming
+   distributed algorithms, but we will only use its advanced queries that
+   include quantification.
+
+   The second runs the program in cafe.da, where "..." is the path to your
+   directory that contains cafe.da.  Similarly, you can run with file
+   tarski.da in place of cafe.da.
+
+   Note that you don't need to install Python if you use the CS labs (e.g.,
+   New CS 106, to which all students in CSE215 have card access), where you
+   can replace "python" with "python36".
+
+
+Now the two programming problems [total 23 points]:
+
+1. Program the cafeteria problem in Exercise Set 3.3 #10 (a,b,c,d,f). [3pts each]
+
+   You can do this by starting with cafe.da: replace the 4 statements with
+   your 5 statements for #10 (a,b,c,d,f).
+
+2. Program the Tarski's World problem in Examples 3.3.1 and 3.3.2. [4 pts each]
+
+   You can do this by starting with tarski.da: (1) replace the blocks with
+   the blocks in Figure 3.3.1, and (2) replace the 4 statements with the 2
+   statements for the two examples.  Note, for (2), you may need to define
+   some more predicates.
+
+Running your program using "python -m da" should print "--------" followed
+by the truth values of the statements you programmed, as done in the given
+da files.
+
+
+For submission, add your two program files, cafe_sol.da and tarski_sol.da,
+to your single zip file for submission.

@@ -1,0 +1,53 @@
+# page 72 of textbook: Example 3.1.13
+
+# given knowledge from the first paragraph without Figure 3.1.1:
+
+class Block:
+    fields = ('row', 'column', 'shape', 'color')
+    def __init__(self, *args):
+        for f, a in zip(self.fields, args): setattr(self, f, a)
+
+def Triangle(x): return x.shape == "triangle" # x is a triangle
+def Square(x): return x.shape == "square"     # x is a square
+def Blue(y): return y.color == "blue"         # y is blue
+def Gray(y): return y.color == "gray"         # y is gray
+def RightOf(x,y): return x.column > y.column  # x is to the right of y
+
+
+# Figure 3.1.1 and statements:
+
+def figure_3_1_1_statements():
+
+    # Figure 3.1.1
+
+    a = Block(1, 1, 'triangle', 'blue' )
+    b = Block(1, 2, 'circle',   'black')
+    c = Block(2, 3, 'triangle', 'blue' )
+    d = Block(2, 4, 'circle',   'gray' )
+    e = Block(3, 2, 'square',   'blue' )
+    f = Block(3, 3, 'circle',   'gray' )
+    g = Block(4, 2, 'triangle', 'blue' )
+    h = Block(4, 3, 'square',   'black')
+    i = Block(4, 4, 'circle',   'gray' )
+    j = Block(5, 4, 'square',   'black')
+    k = Block(5, 5, 'circle',   'gray' )
+  
+    blocks = {a,b,c,d,e,f,g,h,i,j,k}
+    
+
+    # statements below Figure 3.1.1
+
+    #def implies(p, q): return not p or q
+    #s1 = each(t in blocks, has= implies(Triangle(t), Blue(t)))
+    s1 = each(t in blocks, has= not Triangle(t) or Blue(t))
+    
+    s2 = each(x in blocks, has= not Blue(x) or Triangle(x))
+  
+    s3 = some(y in blocks, has= Square(y) and RightOf(d,y))
+    
+    s4 = some(z in blocks, has= Square(z) and Gray(z))
+    
+    print('--------', s1,s2,s3,s4)
+
+
+figure_3_1_1_statements()

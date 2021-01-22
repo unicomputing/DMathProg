@@ -1,0 +1,80 @@
+# place holder for the parts you are to do; may delete after you finish all
+def TODO(hint = ''): return {}
+
+
+# 0. Prepare better [5 points: 1,4]
+
+# return true if and only if m divides n, and false o.w.
+def divides(m,n): return TODO('whether m divides n, that is, n mod m equals 0') 
+
+print('-------- divides:', divides(3,12), divides(6,15), divides(13,91))
+
+# return the transitive closure of relation R
+def trans(R):
+    T = R
+    while TODO('some (x,y) in T, (y,z) in T, have that (x,z) is not in T'):
+        T.add((x,z))
+    return T
+
+R = {(1,2), (2,3), (1,5), (0,5), (0,1)}
+
+print('======== trans: ', trans(R))
+
+
+# 1. Check a relation that uses intersection [1 point: .5,.5]
+# page 350 of textbook, Exercise Set 8.1 #6(b,c)
+
+X = {'a','b','c'}
+
+def J(A, B): 
+    return 'Yes' if TODO('intersection of A and B is not empty') else 'No'
+
+print('-------- J:', J({'a','b'},{'b','c'}), TODO('check #6(c)'))
+
+
+# 2. Compute ordered pairs in a relation and its inverse relation [1 point]
+# page 350 of textbook, Exercise Set 8.1 #11
+
+A = {3,4,5}; B = {4,5,6}
+
+def S(x, y): return divides(x, y)
+
+print('-------- S:', setof((x,y), x in A, y in B, S(x,y)))
+print('======== S inverse:', TODO('inverse of S'))
+
+
+# 3. Compute ordered pairs in different relations [5 points: .5,.5,1,.5,.5,1,1]
+# page 351 of textbook, Exercise Set 8.1 #20
+
+A = {-1,1,2,4}; B = {1,2}
+
+def R(x,y): return abs(x) == TODO('absolute value of y')
+def S(x,y): return TODO('whether x-y is even')
+
+print('-------- A x B:', TODO('ordered pairs in Cartesian product of A and B'))
+print('-------- R:', TODO('ordered pairs in R'))
+print('-------- R:', TODO('ordered pairs in S'))
+print('-------- R U S:', TODO('ordered pairs in union of R and S'))
+print('-------- R intersect S:', TODO('ordered pairs in intersection of R and S'))
+
+
+# 4. Check if a relation is reflexive, symmetric, and transitive [4 points: 1,1,2]
+# page 358 of textbook, Exercise Set 8.2 #7
+
+A = {0,1,2,3}; R7 = {(0,3),(2,3)}
+
+def reflexive(R): return TODO('check whether R is reflective')
+def symmetric(R): return TODO('check whether R is symmetric')
+def transitive(R): return TODO('check whether R is transitive')
+
+print('======== R7:', reflexive(R7), symmetric(R7), transitive(R7))
+
+
+# 5. Find equivalence classes of a relation [2 points: .5,1.5]
+# page 372 of textbook, Exercise Set 8.3 #10
+
+A = {-5,-4,-3,-2,-1,0,1,2,3,4,5}
+def R(m,n): return TODO('whether 3 divides m square minus n square')
+
+print('-------- Classes of R:', 
+      setof(frozenset(TODO('set of y in A in the equivalence class of x')), x in A))

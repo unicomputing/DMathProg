@@ -1,0 +1,54 @@
+Extra credit problems:
+--------
+First, get the file functions.da.
+
+  It contains the program for you to start with for the programming
+  problems below; you just must replace each occurrence of "TODO('...')",
+  where '...'  is the hint for that occurrence, with your own code.
+
+  Tip: Set the language in your editor/IDE to Python so you can see the
+  syntax highlighting.
+
+--------
+Next, set up to run Python (and thus DistAlgo) on command line:
+
+  This is as in Homework 4, except to use file functions.da in place of
+  seqrec.da
+
+  Tip: you must use DistAlgo, because Python will not be able to give you
+  the counterexample for free when checking a function to be 1-1 fails.
+
+--------
+Now, the programming problems [20 points total]:
+
+1. Defining function using set comprehension [5 points]
+
+   Write the definition of function T in Exercise Set 7.1 #10.
+
+2. Defining function to return pair [1 point]
+
+   Finish writing the definition of function G in Exercise Set 7.1 #12.
+
+3. Checking function to be 1-1 and onto [12 points: 1,5,5,1 for each part]
+
+a) Write the definition of function G in Exercise Set 7.2 #7.
+
+b) Finish writing the definition of function oneone that 
+   checks whether the given function f is one-to-one.
+
+c) Write the definition of function onto that 
+   checks whether the given function f is onto.
+
+d) Finish writing the print statement for function G, similar to that for F.
+
+4. Defining composition of functions [2 points]
+
+   Write the composition of functions in Exercise Set 7.3 #7.
+
+Tip: Each TODO should be a few characters or at most slightly longer than
+half a line, except that function G in problem 3 could be 4 short lines
+like function F.
+
+--------
+For submission, add your program file, functions_sol.da, to your single zip
+file for submission.

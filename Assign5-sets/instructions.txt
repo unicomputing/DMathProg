@@ -1,0 +1,43 @@
+Extra credit problems:
+--------
+First, get the file sets.da.
+
+  It contains the program for you to start with for the programming
+  problems below; you just must replace each occurrence of "TODO('...')",
+  where '...'  is the hint for that occurrence, with your own code.
+
+  Tip: Set the language in your editor/IDE to Python so you can see the
+  syntax highlighting.
+
+--------
+Next, set up to run Python (and thus DistAlgo) on command line:
+
+  This is as in Homework 4, except to use file sets.da in place of
+  seqrec.da
+
+--------
+Now, the programming problems [20 points total]:
+
+1. Set operations: subset, difference, and Cartesian product. [2,4,4 points respectively]
+
+   You must write the subset operation using quantification, and write the
+   other two using set comprehension (also called set former or set
+   builder) similar to the operation for set intersection in given file
+   (you can write using either Python or DistAlgo syntax).
+
+2. Write the set operations in Exercise Set 6.1 #12(f,g,h,i,j). [5 points total]
+
+   You can use the set operations defined, similar to uses for
+   #12(a,b,c,d,e) in the given file.
+
+3. Write the set power set operations in Exercise Set 6.1 #33. [3 points total]
+
+   You can use the power set function in the given file.
+
+4. Write the set operations in Exercise Set 6.1 #35(c,d). [2 points total]
+
+   You can use the set operations defined in the given file.
+
+--------
+For submission, add your program files, sets_sol.da, to your single zip
+file for submission.

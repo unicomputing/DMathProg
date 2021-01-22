@@ -1,0 +1,46 @@
+# page 87 of textbook: Example 3.3.3
+
+# given knowledge from the first paragraph and shown in Figure 3.3.2:
+
+salads = {'green salad', 'fruit salad'}
+
+main_courses = {'spaghetti', 'fish'}
+
+desserts = {'pie', 'cake'}
+
+beverages = {'milk', 'soda', 'coffee'}
+
+stations = [salads, main_courses, desserts, beverages]
+
+choices = {
+
+  'Uta': {'green salad', 'spaghetti', 'pie', 'milk'},
+
+  'Tim': {'fruit salad', 'fish', 'pie', 'cake', 'milk', 'coffee'},
+
+  'Yuen': {'spaghetti', 'fish', 'pie', 'soda'},
+}
+
+students = choices.keys()
+
+
+# helper set and function, to capture English more easily:
+
+items = setof(item, sta in stations, item in sta)
+
+def chose(student, item): return item in choices[student]
+
+
+# statements below Figure 3.3.2:
+
+s1 = some(I in items, has= each(S in students, has= chose(S,I)))
+
+s2 = some(S in students, has= each(I in items, has= chose(S,I)))
+
+s3 = some(S in students, has= each(Z in stations, 
+                                   has= some(I in Z, has= chose(S,I))))
+
+s4 = each(S in students, Z in stations, has= some(I in Z, has= chose(S,I)))
+
+
+print('--------', s1,s2,s3,s4)

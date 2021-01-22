@@ -1,0 +1,88 @@
+Extra credit problems:
+--------
+First, get the file seqrec.da.
+
+  It contains the program for you to start with for the programming
+  problems below; you just must replace each occurrence of "TODO('...')",
+  where "..."  is the hint for that occurrence, with your own code.
+
+  Tip: Set the language in your editor/IDE to Python so you can see the
+  syntax highlighting.
+
+--------
+Next, set up to run Python (and thus DistAlgo) on command line:
+
+  If you have already run DistAlgo (by getting it using the "python -m pip
+  install ..." command given in Homework 2), all you have to do now is to
+  run the following command to get the latest pre-release (note just the
+  extra "--upgrade"):
+
+      python -m pip install --upgrade --pre pyDistAlgo
+
+  Otherwise, the following two steps are the same as in Homework 2 except
+  for (i) mentioning aggregation (sum and product) in addition to
+  quantification, and (ii) using the program file seqrec.da in the command:
+
+(1) Install any Python 3.7 (or 3.6) version to be able to run python as a
+    command in a terminal.
+
+(2) Run the following two commands:
+
+      python -m pip install --pre pyDistAlgo
+
+      python -m da ...seqrec.da
+
+    The first installs DistAlgo, an extension of Python for programming
+    distributed algorithms, but we will only use its advanced queries that
+    include quantification and aggregation (sum and product).
+
+    The second runs the program in seqrec.da, where "..." is the path to
+    your directory that contains seqrec.da.
+
+    Tip: If you have any problem with these two steps, you should do any
+    and all of the following to have it solved: (i) google about it, (ii)
+    ask a friend or classmate, (iii) post your problem in the Q&A Forum,
+    (iv) go to an office hour, and (v) make an appointment with a TA or me
+    if you cannot find time for any of the office hours.
+
+--------
+Now, the programming problems [52 below + 2 points for exercise, 54 total]:
+
+1. Exercises problems. [4 points each, 24 sub total]
+
+(1)  Write the summation form in Exercise Set 5.1 #21, 
+     in both DistAlgo and Python, and compute it.
+
+(2)  Write the given formula in Exercise Set 5.1 #39 
+     and its summation form in DistAlgo or Python. 
+
+(3)  Write the formula that p(n) stands for in Exercise Set 5.2 #4(a), 
+     in DistAlgo or Python, and compute p(2).
+
+(4)  Write the equation in Exercise Set 5.2 #16 in DistAlgo or Python, 
+     and compute it for n = 2.
+
+(5)  Write the recursive definition of d in Exercise Sec 5.5 #4 
+     in DistAlgo/Python, and compute the first four terms.
+
+(6)  Write the recursive definition of f in Exercise Set 5.6 #8 and 
+     its closed form in DistAlgo/Python, 
+     and check they are equal for the first five terms.
+
+2. Comparing aggregation, recursion, and iteration. [10 sub total]
+
+   Write the product on the left of equation in Exercise Set 5.2 #16 in
+   three forms---aggregation, recursion, and iteration, in DistAlgo, and
+   test that they are equal for n = 5.
+
+3. Euclid algorithm for GCD. [8 points]
+
+   Write the Euclid algorithm for computing GCD using recursion.
+
+4. Hanoi Tower. [10 points]
+
+   Write the Hanoi Tower solution using recursion.
+
+--------
+For submission, add your program files, seqrec_sol.da, to your
+single zip file for submission.

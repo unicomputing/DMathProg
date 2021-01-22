@@ -1,0 +1,97 @@
+# print a question number and the result set (sorted for ease of reading)
+def print_sorted(number,S):
+    print(number, '--------', sorted(S))
+
+# place holder for the parts you are to do; may delete after you finish all
+def TODO(hint = ''): return set()
+
+
+# 1. set operations
+
+# 1(1). subset
+def issubset(S, T):
+    return TODO('universal quantification as discussed in class')
+
+# set union
+def union(S, T):
+    return S.union(T)
+
+# set intersection
+def inter(S, T):
+    return setof(x, x in S, x in T)  # in da syntax
+#   return {x for x in S if x in T}  # in py/da syntax
+
+# 1(2). set difference
+def diff(S, T):
+    return TODO('set comprehension for S - T')
+
+# 1(3). Cartesian product
+def cartprod(S, T):
+    return TODO('set comprehension form for Cartesian product')
+
+# power set, as list of lists, where S can be any given set or list
+def pow(S):
+    L = list(S)
+    return pow(L[1:]) + [[L[0]] + s for s in pow(L[1:])] if S else [[]] 
+
+   
+# 2. page 262 of textbook: Exercise Set 6.1 #12, but with discrete sets
+# b, d, f, h, j is in homework
+
+A = {-3, -2, -1, -0.9, 0}
+B = {-0.9, 0, 0.1, 1, 1.9}
+C = {6.1, 7, 8}
+U = {-4, -3.1, -3, -3, -1, -0.9, 0.1, 0, 1, 1.9, 2, 3, 4, 5, 6, 6.1, 7, 8, 9}
+
+# a. solution: {x in R | -3 <= x < 2}
+print_sorted('a', union(A,B))
+
+# b. solution: homework question
+print_sorted('b', inter(A,B))
+
+# c. solution: {x in R | x < -3 or x > 0}
+print_sorted('c', diff(U,A))
+
+# d. solution: homework question
+print_sorted('d', union(A,C))
+
+# e. solution: {}
+print_sorted('e', inter(A,C))
+
+# f. solution: homework question
+print_sorted('f', TODO('f'))
+
+# g.
+print_sorted('g', TODO('g'))
+
+# h. solution: homework question
+print_sorted('h', TODO('h'))
+
+# i.
+print_sorted('i', TODO('i'))
+
+# j. solution: homework question
+print_sorted('j', TODO('j'))
+
+
+# 3. page 263 of textbook: Exercise Set 6.1 #33
+# Find (a) P({}), (b) P(P({}))), and (c) P(P(P({})))
+
+print_sorted('a test', pow({1,2,3}))
+
+print_sorted('33 (a)', TODO('power set ops in a'))
+
+print_sorted('33 (b)', TODO('power set ops in b'))
+
+print_sorted('33 (c)', TODO('power set ops in c'))
+
+
+# 4. page 263 of textbook: Exercise Set 6.1 #35
+# Let A = {a,b}, B = {1,2}, and C = {2,3}.
+# Find (c) A \times (B \cap C), and (d) (A \times B) \cap (A \times c)
+
+A = {'a','b'}; B = {1,2}; C = {2,3}
+
+print('35 (c) ________', TODO('set ops in c'))
+
+print('35 (d) ________', TODO('set ops in d'))

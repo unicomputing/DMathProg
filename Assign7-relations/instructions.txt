@@ -1,0 +1,53 @@
+Extra credit problems:
+--------
+First, get the file relations.da.
+
+  It contains the program for you to start with for the programming
+  problems below; you just must replace each occurrence of "TODO('...')",
+  where '...'  is the hint for that occurrence, with your own code.
+
+  Tip: Set the language in your editor/IDE to Python so you can see the
+  syntax highlighting.
+
+--------
+Next, set up to run Python (and thus DistAlgo) on command line:
+
+  This is as in Homework 4, except to use file relations.da in place of
+  seqrec.da
+
+  Tip: you must use DistAlgo, because Python will not be able to give you
+  the witness needed for free in computing the transitive closure.
+
+--------
+Now, the programming problems [18 points total]:
+
+0. Prepare better [5 points: 1,4]
+
+   Define a function that tests whether a number m divides a number n.
+   Define a function that computes the transitive closure of a relation R.
+
+1. Check a relation that uses intersection [1 point]
+
+   Page 350 of textbook, Exercise Set 8.1 #6(b,c).
+
+2. Compute ordered pairs in a relation and its inverse relation [1 point]
+
+   Page 350 of textbook, Exercise Set 8.1 #11.
+
+3. Compute ordered pairs in different relations [5 points: .5,.5,1,.5,.5,1,1]
+
+   Page 351 of textbook, Exercise Set 8.1 #20
+
+4. Check if a relation is reflexive, symmetric, and transitive [4 points: 1,1,2]
+   Page 358 of textbook, Exercise Set 8.2 #7
+
+5. Find equivalence classes of a relation [2 points: .5,1.5]
+
+   Page 372 of textbook, Exercise Set 8.3 #10
+
+Tip: Each TODO should be a few characters or at most slightly longer than
+half a line.
+
+--------
+For submission, add your program file, relations_sol.da, to your single zip
+file for submission.

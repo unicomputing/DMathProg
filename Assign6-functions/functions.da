@@ -1,0 +1,61 @@
+# keep this here because it is not yet in the released version of DistAlgo
+def ints(n1,n2): return range(n1,n2+1)
+
+# place holder for the parts you are to do; may delete after you finish all
+def TODO(hint = ''): return 1
+
+
+# 1. Defining function using set comprehension [5 points]
+
+# page 302 of textbook, Exercise Set 7.1 #10
+def T(n):
+    return TODO('set of divisors d, d in 1..n, d divides n')
+
+print('-------- T(n): ', T(1), T(15), T(17), T(5), T(18), T(21))
+
+
+# 2. Defining function to return pair [1 point]
+
+# page 303 of textbook, Exercise Set 7.1 #12
+def G(a,b):
+    return ((2*a + 1) % 5, TODO('2nd component of the tuple/pair'))
+
+print('-------- G(a,b): ', G(4,4), G(2,1), G(3,2), G(1,5))
+
+
+# 3. Checking function to be 1-1 and onto [12 points]
+
+# page 319 of textbook, Exercise Set 7.2 #7
+X = {'a', 'b', 'c', 'd'}
+Y = {'e', 'f', 'g'}
+
+def F(x):
+    if x == 'a': y = 'f'
+    if x == 'b': y = 'g'
+    if x == 'c': y = 'e'
+    if x == 'd': y = 'e'
+    return y
+
+def G(x):
+    TODO('define G as given in the problem')
+
+def oneone(f):
+    p = each(x1 in X, x2 in X, has= TODO('check as in definition of 1-1'))
+    return 'yes' if p else 'no: x1='+x1+' x2='+x2+' f(x1)='+f(x1)+' f(x2)='+f(x2)
+
+def onto(f):
+    p = TODO('check with each and some as in definition of onto')
+    return p
+
+print('======== F:', oneone(F), onto(F))
+print('======== G:', TODO('check 1-1 for G'), TODO('check onto for G'))
+
+
+# 4. Defining composition of functions [2 points]
+
+# page 332 of textbook, Exercise Set 7.3 #7
+def H(a): return 6 * a
+def K(a): return a % 4
+def KoH(a): return TODO('composition of H and K')
+
+print('-------- KoH: ', KoH(0), KoH(1), KoH(2), KoH(3))

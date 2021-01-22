@@ -1,0 +1,46 @@
+Extra credit problem:
+
+There is one prerequisite if you didn't do the extra-credit programming
+problems in Homework 2:
+
+  Install any Python version to be able to run python as a command in a
+  terminal.
+
+  Note that you don't need to install Python if you use the CS labs (e.g.,
+  New CS 106, to which all students in CSE215 have card access).
+
+  I will hold extra help in New CS 115 during my Monday morning office
+  hours to help those who need.
+
+
+To get started:
+
+a) Get the file div.py.
+
+   It contains a program that you can start with for the programming
+   problem below.
+
+b) Run the following command
+
+      python ...div.py a d
+
+   where "..." is the path to your directory that contains div.py, "a" is a
+   nonnegative integer to be divided, and "d" is a positive integer as the
+   divisor.
+
+   It prints "--------" followed by the quotient and the remainder of a
+   divided by d.
+
+
+Now the programming problem [12 points]:
+
+Program the Euclidean algorithm on Slide 52.
+
+You can do this by starting with div.py and modifying it.
+
+Running your program using "python euclid.py a b" should print "--------"
+followed by the greatest common divisor of a and b.
+
+
+For submission, add you program file, euclid.py, to your single zip file
+for submission.
